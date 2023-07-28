@@ -4,16 +4,16 @@ block content
     h2 Video
     iframe(src="https://www.youtube.com/embed/" + id frameborder="0" allow="autoplay; encrypted-media")
 
-    h2 Formats
+    h2 Dostępne Formaty :
 
     table.formats
         tr
             th Format
-            th Quality
+            th Jakość
             th Bitrate
-            th Container
+            th Rozszeżenie
             th Codecs
-            th URL
+            th Link do Pobrania
         each format in formats
             tr
                 td
@@ -32,12 +32,12 @@ block content
                 td
                     a(href=format.url target="_blank" rel="noreferrer") Download
 
-    h2 Thumbnails
+    h2 Miniaturki
     table
         tr
-            th Image
-            th Size
-            th Download
+            th Zdjęcie
+            th Rozmiar
+            th Link do Pobrania
         each thumbnail in thumbnails
             tr
                 td
